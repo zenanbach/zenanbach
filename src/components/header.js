@@ -18,7 +18,7 @@ const Header = ({ menuLinks, siteTitle }) => (
         <ul>
           {menuLinks.map(link => {
             return (
-              <li>
+              <li key={link.link}>
                 <Link to={link.link}>{link.name}</Link>
               </li>
             )

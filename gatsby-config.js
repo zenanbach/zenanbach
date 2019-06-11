@@ -10,7 +10,15 @@ module.exports = {
       },
       {
         name: "about",
-        link: "/page-2",
+        link: "/about",
+      },
+      {
+        name: "projects",
+        link: "/projects",
+      },
+      {
+        name: "contact",
+        link: "/contact",
       },
     ],
   },
