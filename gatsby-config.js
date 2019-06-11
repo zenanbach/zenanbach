@@ -3,19 +3,25 @@ module.exports = {
     title: `Zenanbach Creative`,
     description: `Lean, creative, web development services`,
     author: `@zenanbach`,
-    menuLinks:[
+    menuLinks: [
       {
-          name:'home',
-          link:'/'
+        name: "home",
+        link: "/",
       },
       {
-          name:'page2',
-          link:'/page-2'
-      }
-    ]
+        name: "about",
+        link: "/page-2",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -40,5 +46,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    "gatsby-plugin-sass",
   ],
 }
