@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Dustin Grella Animation Studio",
+    "url": "https://dustystudio.com",
+    "description": "This site was blah blah blah My friend Dusty",
+    "slug": "dusty-studio",
+    "images": [
+      "Z_dusty_home.png",
+      "Z_dusty_work.png",
+      "Z_dusty_work_detail.png",
+      "Z_dusty_animation_hotline.png"
+    ]
+  },
+  {
+    "title": "Courageous Parents Network",
+    "url": "https://courageousparentsnetwork.org",
+    "description": "A site I have been working on for over 5 years",
+    "slug": "courageous-parents-network",
+    "images": ["Z_cpn_home.png"]
+  },
+  {
+    "title": "I Make Stuff for Fun",
+    "url": "https://imakestuffforfun.com",
+    "description": "This site was blah blah blah Some old Deadhead",
+    "slug": "i-make-stuff-for-fun"
+  },
+  {
+    "title": "Structures of Coastal Resilience",
+    "url": "http://structuresofcoastalresilience.org",
+    "description": "This site was blah blah blah.  An organization that maps the changes of our coastline",
+    "slug": "structures-of-coastal-resilience"
+  },
+  {
+    "title": "Sutton Place Chiropractic",
+    "url": "https://suttonplacechiropractic.com",
+    "description": "This site was blah blah blah.  My Chiropractor",
+    "slug": "sutton-place-chiro"
+  },
+  {
+    "title": "Tanis",
+    "url": "https://tanis.world",
+    "description": "A site built for the French Language pop start Tanis Chalopin",
+    "slug": "tanis"
+  },
+  {
+    "title": "TXC Entertainment",
+    "url": "https://txcentertainment.com",
+    "description": "This site was blah blah blah.  The Film Score website of Tanis Chalopin",
+    "slug": "txc-entertainment"
+  }
+]

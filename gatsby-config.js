@@ -23,11 +23,19 @@ module.exports = {
     ],
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
       },
     },
     {
@@ -35,6 +43,15 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-plugin-emotion`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     `gatsby-transformer-sharp`,
