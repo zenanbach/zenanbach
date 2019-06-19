@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 import styles from "./projects.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -16,16 +17,9 @@ const projects = ({ data }) => {
             return (
               <div key={node.id} className={styles.project}>
                 <Link to={`/${node.fields.slug}/`}>
-                  {node.frontmatter.featuredImage ? (
-                    <img
-                      src={require(`../images/${
-                        node.frontmatter.featuredImage
-                      }`)}
-                      alt={node.frontmatter.title}
-                    />
-                  ) : (
-                    ""
-                  )}
+                  <Img
+                    sizes={node.frontmatter.featuredImage.childImageSharp.sizes}
+                  />
                 </Link>
                 <h2>{node.frontmatter.title}</h2>
               </div>
@@ -46,7 +40,13 @@ export const query = graphql`
           frontmatter {
             title
             url
-            featuredImage
+            featuredImage {
+              childImageSharp {
+                sizes(maxWidth: 1240) {
+                  srcSet
+                }
+              }
+            }
           }
           fields {
             slug

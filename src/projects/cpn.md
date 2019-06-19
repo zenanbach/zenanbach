@@ -1,7 +1,7 @@
 ---
 title: "Courageous Parents Network"
 url: "https://courageousparentsnetwork.org"
-featuredImage: "Z_cpn_home.png"
+featuredImage: ../images/Z_cpn_home.png
 ---
 
 Universal React app with Wordpress content editor, Auth0 user authentication and database.
