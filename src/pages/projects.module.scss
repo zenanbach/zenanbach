@@ -1,0 +1,12 @@
+.projects {
+  .projectGrid {
+    display: flex;
+    flex-direction: row;
+
+    .project {
+      width: 50%;
+      padding-left: 0.66rem;
+      padding-right: 0.66rem;
+    }
+  }
+}

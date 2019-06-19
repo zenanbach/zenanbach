@@ -1,23 +1,26 @@
 import React from "react"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
-const Projects = ({ pageContext }) => (
-  <Layout>
-    <SEO title={pageContext.title} description={pageContext.description} />
-    <div>
-      <h1>{pageContext.title}</h1>
-      {pageContext.images && pageContext.images.length ? (
-        <img
-          src={require(`../images/${pageContext.images[0]}`)}
-          alt={pageContext.title}
-        />
-      ) : (
-        ""
-      )}
-      <p>{pageContext.description}</p>
-    </div>
-  </Layout>
-)
+export default ({ data }) => {
+  const post = data.markdownRemark
+  return (
+    <Layout>
+      <SEO title={post.frontmatter.title} />
+      <h1>{post.frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    </Layout>
+  )
+}
 
-export default Projects
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`
