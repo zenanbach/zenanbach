@@ -1,7 +1,7 @@
 ---
-title: "Courageous Parents Network"
-url: "https://courageousparentsnetwork.org"
-featuredImage: ../images/cpn-icon.png
+title: "TXC Entertainment"
+url: "https://txcentertainment.com"
+featuredImage: ../images/txc-logo.png
 ---
 
 Universal React app with Wordpress content editor, Auth0 user authentication and database.

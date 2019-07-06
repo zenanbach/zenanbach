@@ -1,7 +1,7 @@
 ---
-title: "Courageous Parents Network"
-url: "https://courageousparentsnetwork.org"
-featuredImage: ../images/cpn-icon.png
+title: "I Make Stuff for Fun"
+url: "https://imakestuffforfun.com"
+featuredImage: ../images/fun-logo.png
 ---
 
 Universal React app with Wordpress content editor, Auth0 user authentication and database.
@@ -9,3 +9,4 @@ Universal React app with Wordpress content editor, Auth0 user authentication and
 Robust Video Sorting algorithm.
 
 ![Courageous Parents Network Homepage](../images/Z_cpn_home.png)
+

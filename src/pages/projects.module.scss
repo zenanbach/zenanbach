@@ -1,10 +1,12 @@
 .projects {
   .projectGrid {
-    display: flex;
-    flex-direction: row;
-
+    .project-row {
+      display: flex;
+      flex-direction: row;
+    }
     .project {
-      width: 50%;
+      width: 33.33333%;
+      max-width: 100%;
       padding-left: 0.66rem;
       padding-right: 0.66rem;
     }

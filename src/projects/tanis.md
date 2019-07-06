@@ -1,7 +1,7 @@
 ---
-title: "Courageous Parents Network"
-url: "https://courageousparentsnetwork.org"
-featuredImage: ../images/cpn-icon.png
+title: "Tanis"
+url: "https://tanis.world"
+featuredImage: ../images/tanis-logo.png
 ---
 
 Universal React app with Wordpress content editor, Auth0 user authentication and database.

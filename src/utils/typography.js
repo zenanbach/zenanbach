@@ -1,7 +1,7 @@
 import Typography from "typography"
-import kirkhamTheme from "typography-theme-kirkham"
+import sternGroveTheme from "typography-theme-stern-grove"
 
-const typography = new Typography(kirkhamTheme)
+const typography = new Typography(sternGroveTheme)
 
 // Export helper functions
 export const { scale, rhythm, options } = typography

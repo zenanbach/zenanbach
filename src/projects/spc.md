@@ -1,7 +1,7 @@
 ---
 title: "Sutton Place Chiropractic"
 url: "https://suttonplacechiropractic.com"
-featuredImage: ../images/Z_spc_home.png
+featuredImage: ../images/spc-icon.png
 ---
 
 Informational site of Sutton Place Chiropractic. Wordpress, Roots stack.

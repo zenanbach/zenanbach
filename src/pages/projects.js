@@ -5,23 +5,40 @@ import styles from "./projects.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+function groupProjectsByTwo(projects) {
+  return Array(Math.ceil(projects.length / 3))
+    .fill()
+    .map((_, i) => {
+      return projects.slice(i * 3, i * 3 + 3)
+    })
+}
+
 const projects = ({ data }) => {
-  console.log(data)
+  const proj = groupProjectsByTwo(data.allMarkdownRemark.edges)
   return (
     <Layout>
       <article className={styles.projects}>
         <SEO title="Projects" />
         <h1>Projects</h1>
         <section className={styles.projectGrid}>
-          {data.allMarkdownRemark.edges.map(({ node }) => {
+          {proj.map((p, i) => {
             return (
-              <div key={node.id} className={styles.project}>
-                <Link to={`/${node.fields.slug}/`}>
-                  <Img
-                    sizes={node.frontmatter.featuredImage.childImageSharp.sizes}
-                  />
-                </Link>
-                <h2>{node.frontmatter.title}</h2>
+              <div key={i} className={styles.projectRow}>
+                {p.map(({ node }) => {
+                  return (
+                    <div key={node.id} className={styles.project}>
+                      <Link to={`${node.fields.slug}`}>
+                        <Img
+                          fluid={
+                            node.frontmatter.featuredImage.childImageSharp.fluid
+                          }
+                          alt={node.frontmatter.title}
+                        />
+                      </Link>
+                      <h2>{node.frontmatter.title}</h2>
+                    </div>
+                  )
+                })}
               </div>
             )
           })}
@@ -42,8 +59,8 @@ export const query = graphql`
             url
             featuredImage {
               childImageSharp {
-                sizes(maxWidth: 1240) {
-                  srcSet
+                fluid(maxWidth: 70000) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

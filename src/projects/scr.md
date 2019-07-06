@@ -1,7 +1,7 @@
 ---
-title: "Courageous Parents Network"
-url: "https://courageousparentsnetwork.org"
-featuredImage: ../images/cpn-icon.png
+title: "Structures of Coastal Resilience"
+url: "http://structuresofcoastalresilience.org"
+featuredImage: ../images/scr-logo.png
 ---
 
 Universal React app with Wordpress content editor, Auth0 user authentication and database.
