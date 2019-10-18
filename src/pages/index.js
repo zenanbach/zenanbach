@@ -8,13 +8,13 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Zenanbach Creative</h1>
-    <p>
+    <h1 style={{ textAlign: "center" }}>Zenanbach Creative</h1>
+    <p style={{ textAlign: "center" }}>
       A boutique web development studio focused on arts, wellness,
       sustainability, and social good
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <Image src="sami-takarautio-JiqalEW6Ml0-unsplash.jpg" />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
