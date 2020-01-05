@@ -1,0 +1,38 @@
+.homeTitle {
+  margin: 0.5em 0em 0px;
+}
+.headShotWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -100px;
+  z-index: 10;
+  .headshotContainer {
+    width: 150px;
+    img {
+      border-radius: 100%;
+      width: 150px;
+    }
+  }
+}
+.homeImageWrapper {
+  img {
+    z-index: -1;
+  }
+}
+.recentProjects {
+  display: flex;
+  flex-direction: row;
+}
+.projectItem {
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+
+  .projectThumbnailWrapper {
+    height: 200px;
+    .projectThumbnailImage {
+      max-height: 200px;
+    }
+  }
+}
