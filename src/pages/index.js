@@ -1,5 +1,12 @@
 import React from "react"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faJs,
+  faHtml5,
+  faReact,
+  faCss3Alt,
+  faNode,
+} from "@fortawesome/free-brands-svg-icons"
 import Layout from "../components/layout"
 import HomeHeroImage from "../components/HomeHeroImage"
 import ZachHeadshotImage from "../components/ZachHeadshotImage"
@@ -29,6 +36,11 @@ const IndexPage = ({ data }) => (
     <h2>What we do</h2>
     <div className={styles.expertise}>
       <div className={styles.item}>
+        <FontAwesomeIcon className={styles.reactIcon} icon={faReact} />
+        <FontAwesomeIcon icon={faJs} />
+        <FontAwesomeIcon icon={faNode} />
+        <FontAwesomeIcon icon={faHtml5} />
+        <FontAwesomeIcon icon={faCss3Alt} />
         {
           // Image
           // Title
