@@ -1,6 +1,7 @@
 ---
 title: "Dusty Animation Studio"
 url: "https://dustystudio.com"
+featured: false
 featuredImage: ../images/dusty-nu-logo.png
 ---
 

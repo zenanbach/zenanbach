@@ -1,5 +1,9 @@
+body {
+  font-family: dm;
+}
 .homeTitle {
   margin: 0.5em 0em 0px;
+  font-size: 2em;
 }
 .headShotWrapper {
   display: flex;
@@ -22,18 +26,61 @@
     z-index: -1;
   }
 }
-.recentProjects {
+.expertise {
   display: flex;
   flex-direction: row;
-}
-.projectItem {
-  margin-top: 1.3em;
-  margin-bottom: 1.3em;
-
-  .projectThumbnailWrapper {
-    height: 200px;
-    .projectThumbnailImage {
-      max-height: 200px;
+  justify-content: center;
+  .item {
+    align-self: center;
+    margin: 2rem;
+    svg {
+      &.reactIcon {
+        color: turquoise;
+      }
+      &.jsIcon {
+        color: yellow;
+      }
+      &.nodeIcon {
+        color: green;
+      }
+      &.htmlIcon {
+        color: red;
+      }
+      &.cssIcon {
+        color: orange;
+      }
+      &.wordpressIcon {
+        color: #22759b;
+      }
     }
   }
 }
+.recentProjects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .projectItem {
+    align-self: center;
+    margin: auto 50px;
+    width: 33%;
+
+    .projectThumbnailWrapper {
+      .projectThumbnailImage {
+        max-height: 200px;
+      }
+    }
+  }
+}
+// .projectItem {
+//   margin-top: 1.3em;
+//   margin-bottom: 1.3em;
+
+//   .projectThumbnailWrapper {
+//     height: 200px;
+//     .projectThumbnailImage {
+//       max-height: 200px;
+//     }
+//   }
+// }

@@ -1,6 +1,7 @@
 ---
 title: "TXC Entertainment"
 url: "https://txcentertainment.com"
+featured: false
 featuredImage: ../images/txc-logo.png
 ---
 

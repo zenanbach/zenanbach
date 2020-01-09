@@ -1,6 +1,7 @@
 ---
 title: "Courageous Parents Network"
 url: "https://courageousparentsnetwork.org"
+featured: true
 featuredImage: ../images/cpn-icon.png
 ---
 

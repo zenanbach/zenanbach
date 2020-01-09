@@ -15,7 +15,6 @@ const HomeProjectGridItem = ({ project }) => {
           />
         </div>
       </Link>
-      <h2>{project.frontmatter.title}</h2>
     </div>
   )
 }

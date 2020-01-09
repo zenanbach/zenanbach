@@ -1,6 +1,7 @@
 ---
 title: "Tanis"
 url: "https://tanis.world"
+featured: true
 featuredImage: ../images/tanis-logo.png
 ---
 

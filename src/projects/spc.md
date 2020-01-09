@@ -1,6 +1,7 @@
 ---
 title: "Sutton Place Chiropractic"
 url: "https://suttonplacechiropractic.com"
+featured: true
 featuredImage: ../images/spc-icon.png
 ---
 
