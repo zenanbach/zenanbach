@@ -2,7 +2,8 @@
 title: "Dusty Animation Studio"
 url: "https://dustystudio.com"
 featured: false
-featuredImage: ../images/dusty-nu-logo.png
+order: 5
+featuredImage: ../images/DUS-home-zportfolio.png
 ---
 
 Wordpress with Roots Stack

@@ -8,6 +8,7 @@ import {
   faNode,
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import HomeHeroImage from "../components/HomeHeroImage"
 import ZachHeadshotImage from "../components/ZachHeadshotImage"
@@ -24,7 +25,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <h1 className={styles.homeTitle}>Zenanbach Creative</h1>
-      <p style={{ margin: "0.5em 0em 0" }}>
+      <p style={{ margin: "0.5em 0em 1.5em", fontSize: "1.2em" }}>
         A boutique web and mobile app development studio focused on arts,
         wellness, sustainability, and social good
       </p>
@@ -38,12 +39,14 @@ const IndexPage = ({ data }) => {
           <HomeHeroImage />
         </div>
       </div>
+      <h2 className={styles["expertise-header"]}>Things I like to work on</h2>
       <div className={styles.expertise}>
         <div className={styles.item}>
           <FontAwesomeIcon
             className={styles.reactIcon}
             icon={faReact}
             size="8x"
+            spin
           />
         </div>
         <div className={styles.item}>
@@ -83,12 +86,15 @@ const IndexPage = ({ data }) => {
           // Description
         }
       </div>
-      <h2>Recent Projects</h2>
+      <h2 className={styles["projects-header"]}>Recent Projects</h2>
       <div className={styles.recentProjects}>
         {featuredProjects.map(proj => (
           <HomeProjectGridItem key={proj.node.id} project={proj.node} />
         ))}
       </div>
+      <Link to="/projects/">
+        <h2>View all projects</h2>
+      </Link>
     </Layout>
   )
 }
@@ -103,6 +109,13 @@ export const query = graphql`
             title
             url
             featured
+            logo {
+              childImageSharp {
+                fluid(maxWidth: 2048) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 2048) {

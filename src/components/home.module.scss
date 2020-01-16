@@ -3,7 +3,7 @@ body {
 }
 .homeTitle {
   margin: 0.5em 0em 0px;
-  font-size: 2em;
+  font-size: 2.7em;
 }
 .headShotWrapper {
   display: flex;
@@ -22,9 +22,17 @@ body {
   }
 }
 .homeImageWrapper {
+  max-height: 300px;
+  overflow: hidden;
   img {
     z-index: -1;
   }
+}
+h2 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 17px;
+  text-decoration: underline;
 }
 .expertise {
   display: flex;
@@ -60,11 +68,18 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 
   .projectItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-self: center;
-    margin: auto 50px;
+    margin: auto 15px;
+    padding-left: 35px;
+    padding-right: 35px;
     width: 33%;
+    height: 150px;
 
     .projectThumbnailWrapper {
       .projectThumbnailImage {

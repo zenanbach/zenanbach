@@ -1,8 +1,10 @@
 ---
 title: "Structures of Coastal Resilience"
 url: "http://structuresofcoastalresilience.org"
-featured: false
-featuredImage: ../images/scr-logo.png
+featured: true
+order: 2
+logo: ../images/scr-logo.png
+featuredImage: ../images/SCR-home-zportfolio.png
 ---
 
 Universal React app with Wordpress content editor, Auth0 user authentication and database.

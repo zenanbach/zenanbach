@@ -43,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___order] }) {
         edges {
           node {
             fields {
