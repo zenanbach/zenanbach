@@ -12,6 +12,7 @@ featuredImage: ../images/CPN-header.png
 ## Overview
 
 - React
+- Typescript
 - SSR
 - Redux
 - Redux First Router
