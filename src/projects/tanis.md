@@ -3,8 +3,8 @@ title: "Tanis"
 url: "https://tanis.world"
 featured: false
 order: 4
-logo: ../images/tanis-logo.png
-featuredImage: ../images/TAN-home-zportfolio.png
+logo: ../images/tanis-logo-crop.png
+featuredImage: ../images/TAN-header.png
 ---
 
 Universal React app with Wordpress content editor, Auth0 user authentication and database.

@@ -3,7 +3,8 @@ title: "TXC Entertainment"
 url: "https://txcentertainment.com"
 featured: false
 order: 6
-featuredImage: ../images/TXC-home-zportfolio.png
+logo: ../images/txc-logo-crop.png
+featuredImage: ../images/TXC-header.png
 ---
 
 Universal React app with Wordpress content editor, Auth0 user authentication and database.
