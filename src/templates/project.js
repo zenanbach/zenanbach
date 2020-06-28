@@ -10,11 +10,16 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
-      <h1>{post.frontmatter.title}</h1>
-      <div className={styles.headerImage}>
-        <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+      <div className={styles.project}>
+        <h1>{post.frontmatter.title}</h1>
+        <div className={styles.headerImage}>
+          <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+        </div>
+        <div
+          className={styles.projectContent}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </div>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   )
 }

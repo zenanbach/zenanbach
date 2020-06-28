@@ -5,42 +5,30 @@ import styles from "./projects.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-function groupProjectsByTwo(projects) {
-  return Array(Math.ceil(projects.length / 3))
-    .fill()
-    .map((_, i) => {
-      return projects.slice(i * 3, i * 3 + 3)
-    })
-}
-
 const projects = ({ data }) => {
-  const proj = groupProjectsByTwo(data.allMarkdownRemark.edges)
   return (
     <Layout>
       <article className={styles.projects}>
         <SEO title="Projects" />
         <h1>Projects</h1>
         <section className={styles.projectGrid}>
-          {proj.map((p, i) => {
+          {data.allMarkdownRemark.edges.map(({ node }, i) => {
             return (
-              <div key={i} className={styles.projectRow}>
-                {p.map(({ node }) => {
-                  return (
-                    <div key={node.id} className={styles.project}>
-                      <Link to={`${node.fields.slug}`}>
-                        <Img
-                          fluid={node.frontmatter.logo.childImageSharp.fluid}
-                          alt={node.frontmatter.title}
-                        />
-                      </Link>
-                    </div>
-                  )
-                })}
+              <div key={i} className={styles.col}>
+                <div key={node.id} className={styles.project}>
+                  <Link to={node.fields.slug}>
+                    <Img
+                      fluid={node.frontmatter.logo.childImageSharp.fluid}
+                      alt={node.frontmatter.title}
+                    />
+                  </Link>
+                </div>
               </div>
             )
           })}
         </section>
       </article>
+      <article className={styles.collabs} />
     </Layout>
   )
 }

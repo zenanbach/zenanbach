@@ -1,9 +1,17 @@
-.headerImage {
-  width: 50%;
-  margin: 30px auto;
+.project {
+  .headerImage {
+    width: 65%;
+    margin: 30px auto;
 
-  .imageItem {
-    //height: 100%;
-    margin: auto 10px;
+    .imageItem {
+      //height: 100%;
+      margin: auto 10px;
+    }
+  }
+  .projectContent {
+    hr {
+      color: #000;
+      border-top: 3px solid #000;
+    }
   }
 }

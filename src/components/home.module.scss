@@ -1,101 +1,98 @@
 body {
   font-family: dm;
 }
-.homeTitle {
-  margin: 0.5em 0em 0px;
-  font-size: 2.7em;
-}
-.headShotWrapper {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: -100px;
-  z-index: 10;
-  .headshotContainer {
-    width: 150px;
-    margin-bottom: 20px;
-    img {
-      border-radius: 50%;
-      width: 150px;
-    }
+.home {
+  .homeTitle {
+    margin: 0.5em 0em 0px;
+    font-size: 2.7em;
   }
-}
-.homeImageWrapper {
-  max-height: 300px;
-  overflow: hidden;
-  img {
-    z-index: -1;
-  }
-}
-h2 {
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 17px;
-  text-decoration: underline;
-}
-.expertise {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  .item {
-    align-self: center;
-    margin: 2rem;
-    svg {
-      &.reactIcon {
-        color: turquoise;
-      }
-      &.jsIcon {
-        color: yellow;
-      }
-      &.nodeIcon {
-        color: green;
-      }
-      &.htmlIcon {
-        color: red;
-      }
-      &.cssIcon {
-        color: orange;
-      }
-      &.wordpressIcon {
-        color: #22759b;
-      }
-    }
-  }
-}
-.recentProjects {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 80px;
-
-  .projectItem {
+  .headShotWrapper {
     display: flex;
-    flex-direction: column;
+    flex: 1;
+    flex-direction: row;
     justify-content: center;
-    align-self: center;
-    margin: auto 15px;
-    padding-left: 35px;
-    padding-right: 35px;
-    width: 33%;
-    height: 200px;
-
-    .projectThumbnailWrapper {
-      .projectThumbnailImage {
-        max-height: 200px;
+    margin-bottom: -100px;
+    z-index: 10;
+    .headshotContainer {
+      width: 150px;
+      margin-bottom: 20px;
+      img {
+        border-radius: 50%;
+        width: 150px;
       }
     }
   }
-}
-// .projectItem {
-//   margin-top: 1.3em;
-//   margin-bottom: 1.3em;
+  .homeImageWrapper {
+    max-height: 170px;
+    overflow: hidden;
+    img {
+      z-index: -1;
+    }
+  }
+  h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 17px;
+    text-decoration: underline;
+  }
+  .expertise {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .item {
+      align-self: center;
+      margin: 2rem;
+      svg {
+        &.reactIcon {
+          color: turquoise;
+        }
+        &.jsIcon {
+          color: yellow;
+        }
+        &.nodeIcon {
+          color: green;
+        }
+        &.htmlIcon {
+          color: red;
+        }
+        &.cssIcon {
+          color: orange;
+        }
+        &.wordpressIcon {
+          color: #22759b;
+        }
+      }
+    }
+  }
+  .recentProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
 
-//   .projectThumbnailWrapper {
-//     height: 200px;
-//     .projectThumbnailImage {
-//       max-height: 200px;
-//     }
-//   }
-// }
+    .projectItem {
+      width: 33%;
+      height: 200px;
+      min-width: 300px;
+      .projectThumbnailWrapper {
+        .projectThumbnailImage {
+          max-height: 200px;
+        }
+      }
+    }
+  }
+  // .projectItem {
+  //   margin-top: 1.3em;
+  //   margin-bottom: 1.3em;
+
+  //   .projectThumbnailWrapper {
+  //     height: 200px;
+  //     .projectThumbnailImage {
+  //       max-height: 200px;
+  //     }
+  //   }
+  // }
+}
