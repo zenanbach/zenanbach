@@ -1,8 +1,8 @@
 ---
 title: "Tanis"
 url: "https://tanis.world"
-featured: false
-order: 4
+featured: true
+order: 2
 logo: ../images/tanis-logo-crop.png
 featuredImage: ../images/TAN-header.png
 ---

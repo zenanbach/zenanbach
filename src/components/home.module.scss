@@ -31,6 +31,10 @@ body {
   }
   h2 {
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
     margin-top: 80px;
     margin-bottom: 17px;
     text-decoration: underline;
@@ -65,6 +69,10 @@ body {
       }
     }
   }
+  .greyContainer {
+    background-color: #f6f6f6;
+    width: 100%;
+  }
   .recentProjects {
     display: flex;
     flex-direction: row;
@@ -81,6 +89,17 @@ body {
         .projectThumbnailImage {
           max-height: 200px;
         }
+      }
+    }
+    .partners {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .partner {
+        width: 25%;
+        height: 200px;
+        min-width: 200px;
       }
     }
   }

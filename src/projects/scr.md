@@ -1,8 +1,8 @@
 ---
 title: "Structures of Coastal Resilience"
 url: "http://structuresofcoastalresilience.org"
-featured: true
-order: 2
+featured: false
+order: 4
 logo: ../images/scr-logo-crop.png
 featuredImage: ../images/SCR-header.png
 ---

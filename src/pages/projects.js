@@ -10,19 +10,17 @@ const projects = ({ data }) => {
     <Layout>
       <article className={styles.projects}>
         <SEO title="Projects" />
-        <h1>Projects</h1>
+        <h1>Recent Projects</h1>
         <section className={styles.projectGrid}>
           {data.allMarkdownRemark.edges.map(({ node }, i) => {
             return (
-              <div key={i} className={styles.col}>
-                <div key={node.id} className={styles.project}>
-                  <Link to={node.fields.slug}>
-                    <Img
-                      fluid={node.frontmatter.logo.childImageSharp.fluid}
-                      alt={node.frontmatter.title}
-                    />
-                  </Link>
-                </div>
+              <div key={i} className={styles.project}>
+                <Link to={node.fields.slug}>
+                  <Img
+                    fluid={node.frontmatter.logo.childImageSharp.fluid}
+                    alt={node.frontmatter.title}
+                  />
+                </Link>
               </div>
             )
           })}

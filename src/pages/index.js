@@ -14,6 +14,7 @@ import HomeHeroImage from "../components/HomeHeroImage"
 import ZachHeadshotImage from "../components/ZachHeadshotImage"
 import SEO from "../components/seo"
 import HomeProjectGridItem from "../components/HomeProjectGridItem"
+import PartnerLogos from "../components/PartnerLogos"
 
 import styles from "../components/home.module.scss"
 
@@ -137,15 +138,13 @@ const IndexPage = ({ data }) => {
             // Description
           }
         </div>
-        <h2 className={styles["projects-header"]}>Recent Projects</h2>
+        <h2 className={styles["projects-header"]}>Featured Projects</h2>
         <div className={styles.recentProjects}>
           {featuredProjects.map(proj => (
             <HomeProjectGridItem key={proj.node.id} project={proj.node} />
           ))}
         </div>
-        <Link to="/projects/">
-          <h2>View all projects</h2>
-        </Link>
+        <PartnerLogos />
       </div>
     </Layout>
   )

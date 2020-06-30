@@ -2,17 +2,21 @@
   .projectGrid {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     overflow: hidden;
-    .col {
-      flex: 1;
-      width: 33.33333333%;
+    .project {
+      width: 25%;
       height: 200px;
       max-width: 300px;
-      padding-left: 0.66rem;
-      padding-right: 0.66rem;
+      padding: 35px;
+      transform: scale(1);
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
     // .project {
     //   width: 33.33333%;
