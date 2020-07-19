@@ -1,13 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Zenanbach Creative`,
-    description: `Lean, creative, web development services`,
+    description: `Agile, creative, web development services based in Brooklyn, operated by Zachary Brewer`,
     author: `@zenanbach`,
     menuLinks: [
-      {
-        name: "home",
-        link: "/",
-      },
       {
         name: "about",
         link: "/about",

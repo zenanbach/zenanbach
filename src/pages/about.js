@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,11 +9,10 @@ const About = () => (
     <h1>About</h1>
     <p>
       Zachary Brewer has been creating high quality, responsive web products
-      since 2010. A musician by training, Zach takes great pleasure in the
-      potential for creativity that exists within the well-defined mathematical
-      form which code provides.
+      since 2010. A musician by training, Zach's approach to information
+      architecture is similar to their approach to music: boundless creativity
+      within a strictly defined mathematical form.
     </p>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

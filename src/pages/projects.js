@@ -16,10 +16,12 @@ const projects = ({ data }) => {
             return (
               <div key={i} className={styles.project}>
                 <Link to={node.fields.slug}>
-                  <Img
-                    fluid={node.frontmatter.logo.childImageSharp.fluid}
-                    alt={node.frontmatter.title}
-                  />
+                  <div className={styles.projectInner}>
+                    <Img
+                      fluid={node.frontmatter.logo.childImageSharp.fluid}
+                      alt={node.frontmatter.title}
+                    />
+                  </div>
                 </Link>
               </div>
             )

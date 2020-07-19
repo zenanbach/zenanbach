@@ -27,25 +27,12 @@ const PartnerLogos = () => {
   return (
     <div>
       <h2>Past Clients</h2>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          alignItems: "center",
-          justifyContent: "space-around",
-        }}
-      >
+      <div className={styles.partners}>
         {data.allFile.edges.map(({ node }, i) => (
-          <div
-            key={i}
-            style={{
-              width: "25%",
-              margin: "auto",
-              padding: "35px",
-            }}
-          >
-            <Img fluid={node.childImageSharp.fluid} />
+          <div key={i} className={styles.partner}>
+            <div className={styles.partnerInner}>
+              <Img fluid={node.childImageSharp.fluid} />
+            </div>
           </div>
         ))}
       </div>

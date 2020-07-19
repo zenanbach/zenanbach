@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faJs,
@@ -7,8 +9,9 @@ import {
   faCss3Alt,
   faNode,
   faWordpress,
+  faPhp,
 } from "@fortawesome/free-brands-svg-icons"
-import { Link, graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import HomeHeroImage from "../components/HomeHeroImage"
 import ZachHeadshotImage from "../components/ZachHeadshotImage"
@@ -41,27 +44,34 @@ const IndexPage = ({ data }) => {
             <HomeHeroImage />
           </div>
         </div>
-        <h2 className={styles["expertise-header"]}>Things I like to work on</h2>
-        <div className={styles.expertise}>
-          <div className={styles.item}>
-            <FontAwesomeIcon
-              className={styles.reactIcon}
-              icon={faReact}
-              size="8x"
-              spin
-            />
-          </div>
-          <div className={styles.item}>
-            <FontAwesomeIcon className={styles.jsIcon} icon={faJs} size="8x" />
-          </div>
-          <div className={styles.item}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              viewBox="0 0 630 630"
-              className="svg-inline--fa fa-js fa-w-14 fa-8x home-module--jsIcon--2s7lk"
-            >
-              {/* The MIT License (MIT)
+        <div className={styles.homeAbout}>
+          <p>
+            Zachary Brewer is a full-stack web developer with over 10 years of
+            experience crafting high quality, responsive web products across a
+            variety of industries.
+          </p>
+          <h2>Expertise</h2>
+          <div className={styles.programming}>
+            <ul>
+              <li>
+                <span>
+                  <FontAwesomeIcon
+                    className={styles.jsIcon}
+                    icon={faJs}
+                    size="1x"
+                  />
+                </span>
+                JavaScript
+              </li>
+              <li>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 630 630"
+                    className="svg-inline--fa fa-js fa-w-14 fa-1x home-module--jsIcon--2s7lk"
+                  >
+                    {/* The MIT License (MIT)
 
             Copyright (c) 2015 Remo H. Jansen <remo.jansen@wolksoftware.com>
 
@@ -82,13 +92,13 @@ const IndexPage = ({ data }) => {
             LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
             OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
             THE SOFTWARE. */}
-              <g
-                transform="translate(0.000000,630.000000) scale(0.100000,-0.100000)"
-                fill="#007ACC"
-                stroke="none"
-              >
-                <path
-                  d="M0 3150 l0 -3150 3150 0 3150 0 0 3150 0 3150 -3150 0 -3150 0 0
+                    <g
+                      transform="translate(0.000000,630.000000) scale(0.100000,-0.100000)"
+                      fill="#007ACC"
+                      stroke="none"
+                    >
+                      <path
+                        d="M0 3150 l0 -3150 3150 0 3150 0 0 3150 0 3150 -3150 0 -3150 0 0
             -3150z m5077 251 c160 -40 282 -111 394 -227 58 -62 144 -175 151 -202 2 -8
             -272 -192 -438 -295 -6 -4 -30 22 -57 62 -81 118 -166 169 -296 178 -191 13
             -314 -87 -313 -254 0 -49 7 -78 27 -118 42 -87 120 -139 365 -245 451 -194
@@ -100,43 +110,86 @@ const IndexPage = ({ data }) => {
             89 -30 312 -11 402 67 314 304 533 646 598 111 21 369 13 478 -14z m-1479
             -263 l2 -258 -410 0 -410 0 0 -1165 0 -1165 -290 0 -290 0 0 1165 0 1165 -410
             0 -410 0 0 253 c0 140 3 257 7 260 3 4 502 6 1107 5 l1101 -3 3 -257z"
-                />
-              </g>
-            </svg>
+                      />
+                    </g>
+                  </svg>
+                </span>
+                TypeScript
+              </li>
+              <li>
+                <span>
+                  <FontAwesomeIcon
+                    className={styles.reactIcon}
+                    icon={faReact}
+                    size="1x"
+                    spin
+                  />
+                </span>
+                React
+              </li>
+              <li>
+                <span>
+                  <FontAwesomeIcon
+                    className={styles.reactIcon}
+                    icon={faReact}
+                    size="1x"
+                    spin
+                  />
+                </span>
+                React Native
+              </li>
+              <li>
+                <span>
+                  <FontAwesomeIcon
+                    className={styles.nodeIcon}
+                    icon={faNode}
+                    size="1x"
+                  />
+                </span>
+                NodeJs
+              </li>
+              <li>
+                <span>
+                  <FontAwesomeIcon
+                    className={styles.htmlIcon}
+                    icon={faHtml5}
+                    size="1x"
+                  />
+                </span>
+                HTML
+              </li>
+              <li>
+                <span>
+                  <FontAwesomeIcon
+                    className={styles.cssIcon}
+                    icon={faCss3Alt}
+                    size="1x"
+                  />
+                </span>
+                CSS
+              </li>
+              <li>
+                <span>
+                  <FontAwesomeIcon
+                    className={styles.wordpressIcon}
+                    icon={faPhp}
+                    size="1x"
+                  />
+                </span>
+                PHP
+              </li>
+              <li>
+                <span>
+                  <FontAwesomeIcon
+                    className={styles.wordpressIcon}
+                    icon={faWordpress}
+                    size="1x"
+                  />
+                </span>
+                Wordpress
+              </li>
+            </ul>
           </div>
-          <div className={styles.item}>
-            <FontAwesomeIcon
-              className={styles.nodeIcon}
-              icon={faNode}
-              size="8x"
-            />
-          </div>
-          <div className={styles.item}>
-            <FontAwesomeIcon
-              className={styles.htmlIcon}
-              icon={faHtml5}
-              size="8x"
-            />
-          </div>
-          <div className={styles.item}>
-            <FontAwesomeIcon
-              className={styles.cssIcon}
-              icon={faCss3Alt}
-              size="8x"
-            />
-          </div>
-          <div className={styles.item}>
-            <FontAwesomeIcon
-              className={styles.wordpressIcon}
-              icon={faWordpress}
-              size="8x"
-            />
-          </div>
-          {
-            // Image
-            // Title
-            // Description
-          }
         </div>
         <h2 className={styles["projects-header"]}>Featured Projects</h2>
         <div className={styles.recentProjects}>
