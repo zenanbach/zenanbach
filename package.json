@@ -14,7 +14,7 @@
     "gatsby": "^2.18.17",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-emotion": "^4.0.7",
-    "gatsby-plugin-manifest": "^2.2.34",
+    "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-offline": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
@@ -34,9 +34,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "react-slick": "^0.25.2",
     "react-typography": "^0.16.19",
-    "slick-carousel": "^1.8.1",
     "typography": "^0.16.19",
     "typography-theme-kirkham": "^0.16.19",
     "typography-theme-stern-grove": "^0.16.19"
