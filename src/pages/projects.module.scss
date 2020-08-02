@@ -7,9 +7,15 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
+    @media all and (max-width: 767px) {
+      flex-direction: column;
+    }
     .project {
       width: 33.3333%;
-      @media all and (max-width: 768px) {
+      @media all and (max-width: 767px) {
+        width: 100%;
+      }
+      @media all and (max-width: 992px) {
         width: 50%;
       }
       height: 200px;
@@ -21,6 +27,9 @@
       }
       .projectInner {
         padding: 35px;
+        @media all and (max-width: 767px) {
+          padding: 0;
+        }
       }
     }
     // .project {
