@@ -42,7 +42,7 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
+          <footer style={{ marginTop: `65px` }}>
             © {new Date().getFullYear()}, built by Zenanbach Creative
           </footer>
         </div>
