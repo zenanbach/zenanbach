@@ -21,7 +21,7 @@ const Image = () => (
           relativePath: { eq: "sami-takarautio-JiqalEW6Ml0-unsplash.jpg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 2048) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }

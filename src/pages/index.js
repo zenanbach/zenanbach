@@ -218,14 +218,14 @@ export const query = graphql`
             featured
             logo {
               childImageSharp {
-                fluid(maxWidth: 2048) {
+                fluid(maxWidth: 960) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
             featuredImage {
               childImageSharp {
-                fluid(maxWidth: 2048) {
+                fluid(maxWidth: 1200) {
                   ...GatsbyImageSharpFluid
                 }
               }

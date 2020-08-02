@@ -47,7 +47,7 @@ export const query = graphql`
             url
             logo {
               childImageSharp {
-                fluid(maxWidth: 70000) {
+                fluid(maxWidth: 960) {
                   ...GatsbyImageSharpFluid
                 }
               }
